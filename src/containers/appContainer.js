@@ -37,12 +37,19 @@ var menuHeaderStyle = {
     height: "64px",
     textAlign: "center",
     lineHeight: "64px",
-    fontWeight: 300,
+    fontWeight: 100,
     cursor: "pointer"
 }
 
+const starStyle = {
+    "width": "30px",
+    "margin-bottom": "-5px",
+    "margin-right": "5px"
+}
+
 const MenuHeader = Radium(function ({onClick}) {
-    return (<div onClick={onClick} style={[menuHeaderStyle]}>Inventory 3D</div>)
+    return (<div onClick={onClick} style={[menuHeaderStyle]}>
+        <img className="front" style={starStyle} src="/images/inventory3d-thick.svg" />INVENTORY 3D</div>)
 })
 
 let AppContainer = function ({app, toggleEditorDrawer, goToHome, goToEditor, goToGettingStarted, goToDocumentation, children}) {

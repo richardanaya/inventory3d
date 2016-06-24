@@ -4,12 +4,28 @@
     <meta charset="UTF-8">
     <title>Inventory3D Editor</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,100' rel='stylesheet' type='text/css'>
     <style>
         html {
             font-family: 'Roboto', sans-serif;
             background: #3f3f3f;
             color: #efefef;
+        }
+
+        .spin {
+            -webkit-animation: anim 5s infinite linear;
+            animation: anim 5s infinite linear;
+            rotateZ(-90deg)
+        }
+
+        @-webkit-keyframes anim {
+            from {-webkit-transform: rotateY(0deg);}
+            to {-webkit-transform: rotateY(360deg);}
+        }
+
+        @keyframes anim {
+            from {transform: rotateY(0deg);}
+            to {transform: rotateY(360deg);}
         }
     </style>
 </head>
