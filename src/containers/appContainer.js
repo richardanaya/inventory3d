@@ -49,7 +49,7 @@ const starStyle = {
 
 const MenuHeader = Radium(function ({onClick}) {
     return (<div onClick={onClick} style={[menuHeaderStyle]}>
-        <img className="front" style={starStyle} src="/images/inventory3d-thick.svg" />INVENTORY 3D</div>)
+        <img className="front" style={starStyle} src="/images/inventory3d-thick.svg" />INVENTORY3D</div>)
 })
 
 let AppContainer = function ({app, toggleEditorDrawer, goToHome, goToEditor, goToGettingStarted, goToDocumentation, children}) {
