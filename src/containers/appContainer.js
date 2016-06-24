@@ -43,8 +43,8 @@ var menuHeaderStyle = {
 
 const starStyle = {
     "width": "30px",
-    "margin-bottom": "-5px",
-    "margin-right": "5px"
+    "marginBottom": "-5px",
+    "marginRight": "5px"
 }
 
 const MenuHeader = Radium(function ({onClick}) {
