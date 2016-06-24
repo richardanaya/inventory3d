@@ -39,7 +39,8 @@ var menuHeaderStyle = {
     textAlign: "center",
     lineHeight: "64px",
     fontWeight: 100,
-    cursor: "pointer"
+    cursor: "pointer",
+    userSelect: "none"
 }
 
 const starStyle = {
