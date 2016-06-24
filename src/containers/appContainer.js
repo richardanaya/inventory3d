@@ -12,7 +12,7 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import {
     cyan500, cyan700,
     pinkA200,
-    grey100, grey300, grey400, grey500, grey700,grey900,
+    grey100, grey300, grey400, grey500, grey700,grey800,
     white, darkBlack, fullBlack,
 } from 'material-ui/styles/colors';
 import {toggleEditorDrawer} from "../actions"
@@ -21,7 +21,7 @@ import { push } from 'react-router-redux'
 import { RouteTransition } from 'react-router-transition';
 
 
-darkBaseTheme.palette.primary1Color = grey900;
+darkBaseTheme.palette.primary1Color = grey800;
 darkBaseTheme.palette.primary2Color = grey700;
 darkBaseTheme.palette.primary3Color = grey400;
 darkBaseTheme.palette.accent1Color = pinkA200;
