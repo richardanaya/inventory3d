@@ -13,12 +13,14 @@
             font-family: 'Roboto', sans-serif;
             background: #3f3f3f;
             color: #efefef;
+            overflow: hidden;
         }
 
         .spin {
             -webkit-animation: anim 5s infinite linear;
             animation: anim 5s infinite linear;
             rotateZ(-90deg)
+            -webkit-transform: translateZ(1000px);
         }
 
         @-webkit-keyframes anim {
