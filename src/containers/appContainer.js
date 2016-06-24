@@ -75,7 +75,7 @@ let AppContainer = function ({app, toggleEditorDrawer, goToHome, goToEditor, goT
                         />
                       }
                 />
-                <Drawer open={app.editorDrawerOpen}>
+                <Drawer docked={false} open={app.editorDrawerOpen}>
                     <MenuHeader onClick={toggleEditorDrawer}/>
                     <MenuItem onClick={()=>{toggleEditorDrawer();goToHome()}}>Home</MenuItem>
                     <MenuItem onClick={()=>{toggleEditorDrawer();goToEditor()}}>Editor</MenuItem>
