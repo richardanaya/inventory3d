@@ -53,6 +53,10 @@ const MenuHeader = Radium(function ({onClick}) {
         <img className="front" style={starStyle} src="/images/inventory3d-thick.svg" />INVENTORY3D</div>)
 })
 
+function goToGithub(){
+    window.location = "https://github.com/richardanaya/aframe-inventory3d/"
+}
+
 let AppContainer = function ({app, toggleEditorDrawer, goToHome, goToEditor, goToGettingStarted, goToDocumentation, children, location}) {
     return (
         <MuiThemeProvider muiTheme={muiTheme}>
@@ -63,6 +67,12 @@ let AppContainer = function ({app, toggleEditorDrawer, goToHome, goToEditor, goT
                           onClick={toggleEditorDrawer}>
                           <ActionMenu/>
                         </IconButton>
+                      }
+                    iconElementRight={
+                        <IconButton
+                          iconClassName="fa fa-github"
+                          onClick={goToGithub}
+                        />
                       }
                 />
                 <Drawer open={app.editorDrawerOpen}>
