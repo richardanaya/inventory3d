@@ -4,7 +4,7 @@ import Radium from 'radium';
 
 const DocumentationContainer = Radium(function(props){
     return (
-        <div>
+        <div style={{position:"absolute"}}>
             Documentation
         </div>
     )

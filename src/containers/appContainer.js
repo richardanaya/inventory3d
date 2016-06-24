@@ -18,6 +18,7 @@ import {
 import {toggleEditorDrawer} from "../actions"
 import ActionMenu from 'material-ui/svg-icons/navigation/menu';
 import { push } from 'react-router-redux'
+import { RouteTransition } from 'react-router-transition';
 
 
 darkBaseTheme.palette.primary1Color = grey900;
@@ -52,7 +53,7 @@ const MenuHeader = Radium(function ({onClick}) {
         <img className="front" style={starStyle} src="/images/inventory3d-thick.svg" />INVENTORY3D</div>)
 })
 
-let AppContainer = function ({app, toggleEditorDrawer, goToHome, goToEditor, goToGettingStarted, goToDocumentation, children}) {
+let AppContainer = function ({app, toggleEditorDrawer, goToHome, goToEditor, goToGettingStarted, goToDocumentation, children, location}) {
     return (
         <MuiThemeProvider muiTheme={muiTheme}>
             <div>
@@ -71,7 +72,14 @@ let AppContainer = function ({app, toggleEditorDrawer, goToHome, goToEditor, goT
                     <MenuItem onClick={()=>{toggleEditorDrawer();goToGettingStarted()}}>Getting Started</MenuItem>
                     <MenuItem onClick={()=>{toggleEditorDrawer();goToDocumentation()}}>Documentation</MenuItem>
                 </Drawer>
-                {children}
+                <RouteTransition
+                    pathname={location.pathname}
+                    atEnter={{ opacity: 0 }}
+                    atLeave={{ opacity: 0 }}
+                    atActive={{ opacity: 1 }}
+                >
+                    {children}
+                </RouteTransition>
             </div>
         </MuiThemeProvider>
     )

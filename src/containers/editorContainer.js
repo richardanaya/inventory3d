@@ -4,7 +4,7 @@ import Radium from 'radium';
 
 const EditorContainer = Radium(function(props){
     return (
-        <div>
+        <div style={{position:"absolute"}}>
             Editor
         </div>
     )

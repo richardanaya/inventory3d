@@ -4,7 +4,7 @@ import Radium from 'radium';
 
 const GettingStartedContainer = Radium(function(props){
     return (
-        <div>
+        <div style={{position:"absolute"}}>
             Getting Started
         </div>
     )

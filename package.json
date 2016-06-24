@@ -16,8 +16,9 @@
     "url": "https://github.com/richardanaya/inventory3d/issues"
   },
   "homepage": "https://github.com/richardanaya/inventory3d#readme",
-  "dependencies":{
-    "express":"2.5.x"
+  "dependencies": {
+    "express": "2.5.x",
+    "react-router-transition": "0.0.5"
   },
   "devDependencies": {
     "material-ui": "^0.15.1",
