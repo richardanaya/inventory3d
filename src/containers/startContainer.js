@@ -1,6 +1,5 @@
 import React from 'react';
 import Radium from 'radium';
-const ReactDriveIn = require("react-drive-in");
 
 
 const starStyle = {
@@ -32,9 +31,9 @@ const titleStyle = {
 const StartContainer = function(props){
     return (
         <div>
-            <ReactDriveIn
-                show="https://media.giphy.com/media/qEbo6MHIjbu1O/giphy.mp4"
-            />
+            <video id="background-video" loop autoPlay>
+                <source src="https://media.giphy.com/media/qEbo6MHIjbu1O/giphy.mp4" type="video/mp4" />
+            </video>
             <div style={titleStyle}>
                 <img className="spin" style={starStyle} src="/images/inventory3d.svg" />
                 INVENTORY3D<br/><span style={{fontSize:"10px"}}>Reusable scripted 3d VR assets anywhere</span>

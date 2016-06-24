@@ -17,10 +17,10 @@
   },
   "homepage": "https://github.com/richardanaya/inventory3d#readme",
   "dependencies": {
-    "express": "2.5.x",
-    "react-router-transition": "0.0.5"
+    "express": "2.5.x"
   },
   "devDependencies": {
+    "react-router-transition": "0.0.5",
     "material-ui": "^0.15.1",
     "radium": "^0.17.1",
     "react": "^15.1.0",
@@ -28,7 +28,6 @@
     "react-redux": "^4.4.5",
     "react-router": "^2.4.1",
     "react-router-redux": "^4.0.5",
-    "react-tap-event-plugin": "^1.0.0",
     "redux": "^3.5.2",
     "babel-core": "^6.10.4",
     "babel-loader": "^6.2.4",
