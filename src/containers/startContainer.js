@@ -3,7 +3,7 @@ import Radium from 'radium';
 
 const starStyle = {
     position: "absolute",
-    top: "50%",
+    top: "60%",
     left: "50%",
     marginTop: "-190px",
     marginLeft: "-114px",
@@ -15,7 +15,6 @@ const titleStyle = {
     "fontSize": "34px",
     "height": "80px",
     "textAlign": "center",
-    "lineHeight": "80px",
     "fontWeight": "100",
     "position": "absolute",
     "width": "300px",
@@ -34,8 +33,10 @@ const StartContainer = function(props){
             <video id="background-video" loop autoPlay>
                 <source src="https://media.giphy.com/media/qEbo6MHIjbu1O/giphy.mp4" type="video/mp4" />
             </video>
-            <img className="spin" style={starStyle} src="/images/inventory3d.svg" />
-            <div style={titleStyle}>INVENTORY3D</div>
+            <div style={titleStyle}>
+                <img className="spin" style={starStyle} src="/images/inventory3d.svg" />
+                INVENTORY3D<br/><span style={{fontSize:"10px"}}>Reusable scripted 3d VR assets anywhere</span>
+            </div>
         </div>
     )
 }
