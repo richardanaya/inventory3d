@@ -24,7 +24,7 @@ import { RouteTransition } from 'react-router-transition';
 darkBaseTheme.palette.primary1Color = grey800;
 darkBaseTheme.palette.primary2Color = grey700;
 darkBaseTheme.palette.primary3Color = grey400;
-darkBaseTheme.palette.accent1Color = pinkA200;
+darkBaseTheme.palette.accent1Color = grey100;
 darkBaseTheme.palette.accent2Color = grey100;
 darkBaseTheme.palette.accent3Color = grey500;
 darkBaseTheme.palette.alternateTextColor = grey100;
