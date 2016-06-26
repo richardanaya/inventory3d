@@ -56,6 +56,24 @@ const toolbarStyle = {
     width: "100%"
 }
 
+const frameStyle = {
+    position: "absolute",
+    top: "0px",
+    left: "0px",
+    minHeight: "calc(100% - 56px)",
+    width: "100%"
+}
+
+function onRef(e){
+    e.style.height = window.innerHeight-168+"px"
+    if(!e.resizeWatch){
+        e.resizeWatch = true;
+        window.addEventListener("resize",function(){
+            e.style.height = window.innerHeight-168+"px"
+        })
+    }
+}
+
 const EditorContainer = Radium(function(props){
     return (
         <div style={containerStyle}>
@@ -100,7 +118,8 @@ const EditorContainer = Radium(function(props){
                 <Tabs>
                     <Tab label="Preview" value="a" >
                         <div>
-                            <h1></h1>
+                            <iframe style={frameStyle} ref={onRef} src="viewer.html">
+                            </iframe>
                         </div>
                     </Tab>
                     <Tab label="Script" value="b">

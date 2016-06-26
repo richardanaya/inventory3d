@@ -24,7 +24,7 @@ import { RouteTransition } from 'react-router-transition';
 darkBaseTheme.palette.primary1Color = grey800;
 darkBaseTheme.palette.primary2Color = grey700;
 darkBaseTheme.palette.primary3Color = grey400;
-darkBaseTheme.palette.accent1Color = grey100;
+darkBaseTheme.palette.accent1Color = pinkA200;
 darkBaseTheme.palette.accent2Color = grey100;
 darkBaseTheme.palette.accent3Color = grey500;
 darkBaseTheme.palette.alternateTextColor = grey100;
@@ -76,7 +76,7 @@ let AppContainer = function ({app, toggleEditorDrawer, goToHome, goToEditor, goT
                         />
                       }
                 />
-                <Drawer docked={false} open={app.editorDrawerOpen}>
+                <Drawer disableSwipeToOpen={true} docked={false} open={app.editorDrawerOpen}>
                     <MenuHeader onClick={toggleEditorDrawer}/>
                     <MenuItem onClick={()=>{toggleEditorDrawer();goToHome()}}>Home</MenuItem>
                     <MenuItem onClick={()=>{toggleEditorDrawer();goToEditor()}}>Editor</MenuItem>
